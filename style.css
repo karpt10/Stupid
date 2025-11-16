@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Style for the clickable box */
+.trigger-box {
+    padding: 20px 40px;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 8px;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.trigger-box:hover {
+    background-color: #357bd8;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top of other elements */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.7); /* Dark semi-transparent background */
+    backdrop-filter: blur(5px); /* Optional: blur effect for the background */
+    /* Center the modal content using Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    text-align: center;
+    position: relative;
+    max-width: 500px;
+    font-size: 28px;
+    color: #333;
+}
+
+.close-button {
+    color: #aaa;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+}
+
